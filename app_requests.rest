@@ -1,0 +1,25 @@
+GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJncmVtaW8iLCJwd2QiOiIkMmIkMTAkTy5ocFFtRWdFTlg0SU4uLmhsTDRtZXd3cmo4cTZDTGJTMVhUWGtNQ0sxYXB6a2ZsQ1d5NC4iLCJpYXQiOjE3NjQ2MDk1MzB9.RavK3xmm8BjaRDjA2niC-bh86GQoGsRnWB4oKv_MrL4
+
+
+### Managing Users
+GET http://localhost:3000/users
+
+### Post
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "uid": "gremio",
+    "pwd": "pwd123"
+}
+
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "uid": "gremio",
+    "pwd": "pwd123"
+}
